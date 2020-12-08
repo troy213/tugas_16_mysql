@@ -14,7 +14,7 @@ db.matkul.save({matkul:"Bahasa Indonesia", kode_matkul:"1234562", nama_dosen:"Fi
 
 #### 2. Ubah nama_dosen menjadi Sekar Wandansari untuk kode_matkul = 1234562.
 ```
-db.matkul.update({kode_matkul:"1234562"},{set{nama_dosen:"Sekar Wandansari"}},false,true);
+db.matkul.update({kode_matkul:"1234562"},{$set:{nama_dosen:"Sekar Wandansari"}},false,true);
 ```
 
 #### 3. Hapus data nama dosen a/n Jamal Kosasih dan Ivan Bagus dari tabel matkul!
